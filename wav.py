@@ -87,7 +87,7 @@ class WavSegment(object):
         return wav_seg.__lt__(self)
 
     def __eq__(self, wav_seg):
-        return self.duration == self.duration
+        return self.duration == wav_seg.duration
 
     def __mul__(self, coef):
         coef_i = int(np.floor(coef))
